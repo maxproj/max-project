@@ -5,7 +5,7 @@ app_name = 'Infodate'
 
 urlpatterns = (
 	url(r'^$', index, name='index'),
-	url(r'^/InfodateCalcul/', calcul, name='calcul'),
-	url(r'^/InfodateEngine/', engine, name='engine'),
-    url(r'^/InfodateInput/', input_new, name='input_new'),
+	url(r'^Calculat', calcul, name='calcul'),
+	url(r'^Engine', engine, name='engine'),
+    url(r'^Input', input_new, name='input_new'),
 )
