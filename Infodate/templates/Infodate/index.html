@@ -1,0 +1,178 @@
+﻿<!doctype html>
+<html lang="ru">
+<head>
+ <meta charset="UTF-8">
+ <title>Техническая поддержка Renault Logan</title>
+ {% load staticfiles %}
+ <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+ <link rel="stylesheet" media="screen" href="{% static 'CSS/menu.css' %}">
+ <!--<script type="text/javascript" src="{% static 'js/openwindow.js' %}"></script>-->
+ <meta charset="UTF-8">
+ <style type="text/css">
+        table th, table td
+        {
+            padding: 0px;
+        }
+        table img
+        {
+            height: 480px;
+            width: 850px;
+        }
+    </style>
+</head>
+
+<body style="background-color: #FFFFFF; overflow-x: hidden">
+ <div id="conteiner">
+	<div id="header">
+	  <div id="namecontenier">	
+		<div id="name">
+			Техническое сопровождение по эксплуатации автомобиля<br>&#34;Renault Logan&#34;
+		</div>
+		<div id="logo"></div>
+		<div id="videologan">
+			<!--iframe width="250px" height="145px" src="https://www.youtube.com/embed/bzsFeDt8hf4? start=0 autoplay=1 playlist=bzsFeDt8hf4 loop=1 controls=0 disablekb=1 showinfo=0 rel=0" frameborder="0" allowfullscreen></iframe-->
+			<video width="250px" autoplay loop>
+				<source src='{% static "VIDEO/logan.mp4" %}' type="video/mp4">
+			</video>
+		</div>
+	  </div>
+   </div>
+	  <div id="menu">
+		<ul id="nav">
+			<!--li class="left"><a href="#">About</a></li-->
+			<li class="right"><a href="{% url 'Infodate:engine' %}" target="_blank">Узлы</a></li>
+			<li class="left"><a href="#">Service</a></li>
+			<li class="right"><a href="#">Карта СТО</a></li>
+			<li class="left"><a href="#">Литература</a></li>
+			<li class="right"><a href="{% url 'Infodate:calcul' %}" target="_blank">Расчет</a></li>
+		</ul>
+      </div>
+   <div id="osnova">
+    
+    <!--div class="hyst">
+ 	   <div  class="hystory"> <!--style="font-family: Helvetica Neue; font-size: 14px"-->
+  	      <!--h4 align="center">Краткая история создания<br>автомобиля Renault Logan </h4>
+	   </div>
+	   <div class="hystory_txt">
+  	    <hr style="align: center; width: 250px; size: 1px;">	 
+		 <i>
+		   <p align="justify"> Компактный седан Renault Logan, он же Dacia Logan, дебютировал в 2004 году.
+           		               Производство автомобилей для российского рынка началось в апреле 2005 года
+							   на московском «Автофрамосе».<br>
+		                       &#160;Российский «Логан» оснащался бензиновыми моторами объемом 1,4 (75 л. с.) 
+		                       и 1,6 (84 или 102 л. с.) литра в сочетании с механической или автоматической 
+							   коробками передач.<br>
+							   &#160;Первоначально машина предлагалась по цене 8999 долларов, 
+							   а в 2015 году базовая версия стоила уже 399 тысяч рублей.<br>
+		                       &#160;Производство седанов первого поколения в России завершилось 18 декабря 2015 года, 
+		                       всего за десять лет московский завод выпустил около 550 тысяч таких машин.<br>
+		                       &#160;На базе «Логана» также созданы хэтчбек Sandero, универсал «Лада Ларгус», 
+		                       пикап Nissan NP200. В Индии эта модель производится под маркой Mahindra, 
+							   а в Иране «Рено» выпускается до сих пор.
+		   </p>
+		 </i>
+	   </div>  
+    </div-->
+	<div>
+		<img class="mean" src='{% static "IMAGE/speedometr.jpg" %}'>
+	</div>
+	<div class="logan3d">
+		<table border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td>
+                <img src="" id="product1" />
+            </td>
+          </tr>
+        </table>
+		<div id="dvImages" style="display: none">
+			<img src='{% static "IMAGE/3D_new/1.jpg" %}'>
+			<img src='{% static "IMAGE/3D_new/2.jpg" %}'>
+			<img src='{% static "IMAGE/3D_new/3.jpg" %}'>
+			<img src='{% static "IMAGE/3D_new/4.jpg" %}'>
+			<img src='{% static "IMAGE/3D_new/5.jpg" %}'>
+			<img src='{% static "IMAGE/3D_new/6.jpg" %}'>
+			<img src='{% static "IMAGE/3D_new/7.jpg" %}'>
+			<img src='{% static "IMAGE/3D_new/8.jpg" %}'>
+			<img src='{% static "IMAGE/3D_new/9.jpg" %}'>
+			<img src='{% static "IMAGE/3D_new/10.jpg" %}'>
+			<img src='{% static "IMAGE/3D_new/11.jpg" %}'>
+			<img src='{% static "IMAGE/3D_new/12.jpg" %}'>
+			<img src='{% static "IMAGE/3D_new/13.jpg" %}'>
+			<img src='{% static "IMAGE/3D_new/14.jpg" %}'>
+			<img src='{% static "IMAGE/3D_new/15.jpg" %}'>
+			<img src='{% static "IMAGE/3D_new/16.jpg" %}'>
+			<img src='{% static "IMAGE/3D_new/17.jpg" %}'>
+			<img src='{% static "IMAGE/3D_new/18.jpg" %}'>
+			<img src='{% static "IMAGE/3D_new/19.jpg" %}'>
+			<img src='{% static "IMAGE/3D_new/20.jpg" %}'>
+			<img src='{% static "IMAGE/3D_new/21.jpg" %}'>
+			<img src='{% static "IMAGE/3D_new/22.jpg" %}'>
+			<img src='{% static "IMAGE/3D_new/23.jpg" %}'>
+			<img src='{% static "IMAGE/3D_new/24.jpg" %}'>
+		</div>
+	</div>
+	<div>
+		<img id="gradus" src='{% static "IMAGE/360.png" %}'>
+	</div>
+   <!--div class= "logan_body">
+       <img src='{% static "IMAGE/logan.png" %}'  width="100%" height="100%" usemap="#loganmap" alt="Модель автомобиля"/>
+	   <map name="loganmap" >
+	     <area shape="rect" coords="100,200,180,280" alt="Двигатель" href="#modalENGINE">
+		 <area shape="circle" coords="70,300,40" alt="Электрика" href="#modalELECT">
+		 <area shape="rect" coords="150,300,250,380" alt="Трансмиссия" href="#modalTRANSMISS">
+	   </map>
+   </div-->
+   
+   <!--div class="modal">
+      <div class="modal_engine" id="modalENGINE"> 
+          <div class="title">Двигатель</div> 
+             <a href="#" title="Закртыть" class="close">X</a> 
+      </div> 
+    </div> 
+    <div class="modal">
+        <div class="modal_elect" id="modalELECT"> 
+              <div class="title">Электрика</div> 
+                <a href="#" title="Закртыть" class="close">X</a> 
+        </div> 
+    </div>
+    <div class="modal"> 
+      <!--a href="#modalTWO" class="open">Открыть окно</a--> 
+        <!--div class="modal_transmiss" id="modalTRANSMISS"> 
+              <div class="title">Трансмиссия</div> 
+                <a href="#" title="Закртыть" class="close">X</a> 
+        </div> 
+    </div>
+   
+   <!--div id="rjad">
+        <div id="Vyvod" style="margin-left: 50px; top: 0px;">   </div>
+        <div id="Vyvod"style="margin-left: 350px; top: -80px;">   </div>
+		<div id="Vyvod" style="margin-left: 650px; top: -160px;"> </div>
+   </div-->     
+  </div>
+  <div id="footer">
+  	
+  </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/matdumsa/jQuery.threesixty/master/jquery.threesixty.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            //Load the image URLs into an Array.
+            var arr = new Array();
+            $("#dvImages img").each(function () {
+                arr.push($(this).attr("src"));
+            });
+
+            //Set the first image URL as source for the Product.
+            $("#product1, #product2, #product3").attr("src", arr[0]);
+
+            //Click mode.
+            $("#product1").threesixty({ images: arr,
+                method: 'click',
+                sensibility: 2
+            });
+        });
+    </script>
+ </div>	
+</body>
+</html>
+

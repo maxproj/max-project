@@ -1,0 +1,98 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="windows-1251">
+    <title>engine</title>
+    {% load staticfiles %}
+    <link href="{% static 'CSS/style.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'CSS/menu.css' %}" rel="stylesheet" type="text/css">
+
+</head>
+
+<body style="background-color: #FFFFFF; overflow-x: hidden">
+ <div id="conteiner"> 
+  <div id="header">
+    <div id="namecontenier">	
+		<div id="name">
+			Техническое сопровождение по эксплуатации автомобиля<br>&#34;Renault Logan&#34;
+		</div>
+		<div id="logo"></div>
+		<div id="videologan">
+			<video width="250px" autoplay loop>
+				<source src='{% static "VIDEO/logan.mp4" %}' type="video/mp4">
+			</video>
+		</div>
+	  </div>
+   </div>
+   <div id="menu">
+		<ul id="nav">
+		 <li class="left"><a href="{% url 'Infodate:index'%}" target="_blank">Домой</a></li>
+		 <!--li class="right"><a href="{% url 'Infodate:engine' %}" target="_blank">Узлы</a></li-->
+		 <li class="left"><a href="#">Service</a></li>
+		 <li class="right"><a href="#">Карта СТО</a></li>
+		 <li class="left"><a href="#">Литература</a></li>
+		 <li class="right"><a href="{% url 'Infodate:calcul' %}" target="_blank">Расчет</a>
+		 </li>
+    </ul>
+   </div>
+  <div id="osnova">
+   	<!--div class="vmenu">
+      <ul style="margin-top: 10px;">
+         <li>
+             <a class="entypo-menu" href="#"></a> <span class="menu">Menu</span>
+         </li>
+         <li>
+             <a class="entypo-star" href="#"></a> <span>Favorite</span>
+         </li>
+         <li>
+             <a class="entypo-newspaper" href="#"></a> <span>About us</span>
+         </li>
+         <li>
+             <a class="entypo-location" href="#"></a> <span>Find us</span>
+         </li>
+         <li>
+             <a class="entypo-link" href="#"></a> <span>Share</span>
+         </li>
+         <li>
+             <a class="entypo-help-circled" href="#"></a> <span>FAQ's</span>
+         </li>
+      </ul>
+    </div-->
+    <div class= "logan_body">
+       <img src={% static "IMAGE/loganchema/logan.png" %}  width="100%" height="100%" usemap="#loganmap" alt="Модель автомобиля"/>
+	   <map name="loganmap" >
+	     <area shape="rect" coords="100,200,180,280" alt="Двигатель" href="#modalENGINE">
+		 <area shape="circle" coords="70,300,40" alt="Электрика" href="#modalELECT">
+		 <area shape="rect" coords="150,300,250,380" alt="Трансмиссия" href="#modalTRANSMISS">
+	   </map>
+    </div>
+
+    <div class="modal">
+     <!--a href="#modalONE" class="open">Открыть окно</a-->
+      <div class="modal_engine" id="modalENGINE">
+          <div class="title">Двигатель</div>
+             <a href="#" title="Закртыть" class="close">X</a>
+      </div>
+    </div>
+    <div class="modal">
+      <!--a href="#modalTWO" class="open">Открыть окно</a-->
+        <div class="modal_elect" id="modalELECT">
+              <div class="title">Электрика</div>
+                <a href="#" title="Закртыть" class="close">X</a>
+        </div>
+    </div>
+    <div class="modal">
+      <!--a href="#modalTWO" class="open">Открыть окно</a-->
+        <div class="modal_transmiss" id="modalTRANSMISS">
+              <div class="title">Трансмиссия</div>
+                <a href="#" title="Закртыть" class="close">X</a>
+        </div>
+    </div>
+
+  </div>
+  <div class="footer">
+
+  </div>
+ </div> 
+</body>
+</html>

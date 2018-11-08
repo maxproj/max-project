@@ -1,0 +1,95 @@
+/*@import url('https://fonts.googleapis.com/css?family=Seymour+One&subset=cyrillic');*/
+@import url('https://fonts.googleapis.com/css?family=El+Messiri:700|Playfair+Display+SC:900|Ruslan+Display');
+* {
+   padding: 0;
+   margin: 0;
+}
+ 
+body {
+   background: #f4f1e5;
+   color: #544738;
+   font-family: helvetica, sans-serif;
+}
+ul li {
+ float: left;
+ list-style: none;
+ margin-right: 1em; 
+}
+ 
+li a {
+ color: #544738;
+ text-decoration: none;
+ float: left;
+ font-size: 22px;
+ padding: 2px;
+}
+ 
+li a:hover {
+ color: #7eb9be;
+}
+@font-face {
+ font-family: 'Ruslan Display';
+ font-weight: normal;
+ font-style: normal;
+}
+ul li {
+ float: left;
+ list-style: none;
+ margin-right: 1em;
+ font-family: 'Ruslan Display', helvetica, sans-serif;
+ font-size: 0px;
+ padding: 12px; 
+}
+ 
+li a {
+ color: #F8F8FF;
+ text-decoration: none;
+ float: left;
+}
+ 
+li a:hover {
+ color: #FF7A00;
+}
+li a:hover {
+ -webkit-transform: rotate(-360deg) scale(1.2);
+ -moz-transform: rotate(-360deg) scale(1.2);
+ -o-transform: rotate(-360deg) scale(1.2);
+}
+
+/*.left a:hover {
+ -webkit-transform: rotate(-10deg) scale(1.2);
+ -moz-transform: rotate(-10deg) scale(1.2);
+ -o-transform: rotate(-10deg) scale(1.2);
+}
+ 
+/*.right a:hover {
+ -webkit-transform: rotate(360deg) scale(1.2);
+ -moz-transform: rotate(360deg) scale(1.2);
+ -o-transform: rotate(360deg) scale(1.2);
+}*/
+.left a:hover {
+ 
+ /*Transition*/ 
+ -webkit-transition:All .5s ease;
+ -moz-transition:All .5s ease;
+ -o-transition:All .5s ease;
+ 
+ /*Transform*/ 
+ -webkit-transform: rotate(-360deg) scale(1.2);
+ -moz-transform: rotate(-360deg) scale(1.2);
+ -o-transform: rotate(-360deg) scale(1.2);
+}
+ 
+.right a:hover {
+ 
+ /*Transition*/ 
+ -webkit-transition:All .5s ease;
+ -moz-transition:All .5s ease;
+ -o-transition:All .5s ease;
+ 
+ /*Transform*/ 
+ -webkit-transform: rotate(360deg) scale(1.2);
+ -moz-transform: rotate(360deg) scale(1.2);
+ -o-transform: rotate(360deg) scale(1.2);
+}
+

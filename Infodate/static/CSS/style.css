@@ -1,0 +1,378 @@
+﻿@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=El+Messiri:700|Playfair+Display+SC:900');
+/* CSS Document */
+#fon{
+	display: block;
+	/*background-image: url(../IMAGE/fonrenault1.jpg);
+	/*background-size: 2% 6%;*/
+	background-repeat: repeat;
+	background-clip: padding-box;
+	/*border: dashed 3px #B9C913;*/
+	/*width: 1200px;*/
+	height: 600px;
+	background-attachment: fixed; 
+	}
+#conteiner{
+	background-color: #C0C0C0;
+	width: 1250px;
+	height: 1800px;
+	margin: 10px auto;
+	border: solid 2px #A5A5A5;
+	border-radius: 15px;
+	box-shadow: 5px -5px 20px #A5A5A5, -5px 15px 20px #A5A5A5;
+}	
+#header{
+	position: absolute;
+	display: inline-block;
+	/*border: dashed 2px #0FDD27;*/
+	margin: 0px auto;
+	/*left: 10px;
+	/*top: 10px;*/
+	width: 1250px;
+	height: 145px;
+	}
+#osnova{
+	position: absolute;
+	display: inline-block;
+	/*border: dashed 2px #EB1014;*/
+	margin: 10px auto;
+	/*left: 10px;*/
+	top: 145px;
+	width: 1250px;
+	height: 700px;
+    }
+#footer{
+	position: absolute;
+	display: inline-block;
+	/*border: dashed 2px #EB1014;
+	margin: 10px auto;
+	/*left: 10px;*/
+	top: 850px;
+	width: 1250px;
+	height: 100px;
+}
+#logo{
+	position: relative;
+	width: 150px;
+	height: 130px;
+	background-image: url(../IMAGE/logotype.png);
+	background-size: 100% 90%;
+	background-repeat: no-repeat;
+	/*border: 1px dashed #FFFFFF;*/
+	top: 3px;
+	left: 7px;
+    }
+#namecontenier{
+	position: absolute;
+	width: 1245px;
+	height: 145px;
+	margin-left: 0px;
+	background-image: url(../IMAGE/lineway3.png);
+	border-radius: 12px 12px 0px 0px;
+}	
+#name{
+	position: absolute;
+	width: 847px;
+	height: 80px;
+	margin-left: 155px;
+	top: 10px;
+	/*border: 1px dashed #FFFFFF;*/
+	text-align: center;
+	color: #FF9900;
+	/*font-style: oblique;*/
+	font-size: 26px;
+	font-family: El Messiri, Times New Roman;
+	text-shadow: 1px 1px 3px #1F2B23;
+	
+    }
+#menu{
+	position: absolute;
+	width: 845px;
+	height: 40px;
+	margin-left: 240px;
+	margin-top: 90px;
+	/*border: 1px dashed #FFFFFF;*/
+    }
+#rjad{
+	position: absolute;
+	display: inline;
+	/*border: 1px dashed #26B025;*/
+	width: 1000px;
+	height: 100px;
+	left: 20px;
+	top: 550px;
+     }
+#rjad1{
+	position: absolute;
+	display: inline;
+	border: 1px dashed #26B025;
+	width: 460px;
+	height: 100px;
+	/*left: 250px;*/
+	top: 550px;
+     }	 
+#videologan{
+	position: absolute;
+	width: 250px;
+	/*border: 2px dashed #1CD820;*/
+	right: 0px;
+	top: 3px;
+	}
+.hyst{
+	position: absolute;
+	display: block;
+	background-image: url(../Image/Inform.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	width: 320px;
+	height: 420px;
+	right: 5px;
+	top: 5px;
+	/*float: none;*/
+	/*border: solid 1px #D42DD8;*/
+    }
+.hystory{
+	/*text-align: left;*/
+	color: #FFFFFF;
+	/*border: solid 1px #3225D5;*/
+	width: 250px;
+	height: 50px;
+	margin-left: 25px;
+	}
+.hystory_txt{
+	/*border: dashed 1px #3225D5;*/
+	text-indent:10px;
+	position: absolute;
+	color: white;
+	width: 290px;
+	height: 340px;
+	margin-left: 15px;
+	margin-top: -15px;
+	font-size: small;
+   	/*float: none;*/
+    }
+.logan3d {
+	position: absolute;
+	/*border: dashed 2px #FFFFFF;*/
+	width: 850px;
+	height: 480px;
+	margin-left: 145px;
+	margin-top: 330px;
+	float: none;
+	box-shadow: inset 2px 2px 15px #A5A5A5, 1px 1px 15px #A5A5A5;
+	}
+#gradus{
+	position: absolute;
+	width:100px;
+	height:100px;
+	margin-left: 210px;
+	margin-top: 350px;
+	float: none;
+}	
+.logan_body {
+	position: absolute;
+	border: dashed 2px #FFFFFF;
+	width: 900px;
+	height: 488px;
+	margin-left: 120px;
+	margin-top: 70px;
+	float: none;
+	}
+#Vyvod{
+     width: 150px; 
+	 height: 80px;
+	 margin-left: 0px;
+     background: #B5DDD4;
+     position: relative;
+     border-radius: 10px;
+     }
+#Vyvod:before {
+	  content: "";
+      width: 0; 
+	  height: 0;
+      position: absolute;
+	  right: 60%;
+	  bottom: calc(-25%);
+      border-right: 12px solid transparent;
+      border-top: 24px solid #B5DDD4;
+      border-left: 12px solid transparent;	
+      }
+#input{
+	position: absolute;
+	display: inline-block;
+	border: dashed 2px #000080;
+	background: #D3D3D3;
+	left: 5px;
+	top: 10px;
+	width: 260px;
+	height: 400px;
+}
+.vmenu{
+	position: absolute;
+	display: inline-block;
+	border: dashed 2px #FFFFFF;
+	left: 3px;
+	top: 3px;
+	width: 150px;
+	height: 450px;
+}
+.mean{
+	position:absolute;
+	display: inline-block;
+	margin-top:10px;
+	margin-left:145px;
+	height: 300px;
+	width:850px; 
+	border-radius: 15px; 
+	box-shadow: inset 2px 2px 15px #A5A5A5, 1px 1px 15px #000000;"
+}
+
+/* Стиль для отрисовка тега <map> */
+/* Общий стиль ссылок */ 
+.modal a {
+	display: block; 
+    width: 100px; 
+	height: 30px; 
+	text-align: center; 
+	line-height: 30px; 
+	text-decoration: none !important;
+	margin: 10px auto 0; 
+	box-shadow: 0 0 0 1px #fff;
+	color: #fff; 
+	transition: opacity .4s;
+	} 
+
+/* Общий стиль ссылок при наведение */ 
+.modal a:hover, .modal a:active {opacity: .5;} 
+
+/* Стиль для кнопки "Открыть окно" */ 
+.modal a.open {background: #07f;} 
+
+/* Стиль для кнопки "Закрыть" */ 
+.modal a.close {
+	/*background: #FF3D1E;*/
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	font-family: Times New Roman;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+	} 
+
+/* Не трогать! Это для того, чтобы окно было по центру. */ 
+.modal .modal_engine {
+	left: 0; 
+	top: 0; 
+	right: 0; 
+	bottom: 0; 
+	margin: auto;} 
+
+/* Стиль окна */ 
+.modal .modal_engine {
+     position: fixed; 
+	 display: block;
+     background: #fff; 
+	 padding: 20px;
+     width: 250px; 
+	 height: 100px; 
+	 margin-left: 160px;
+	 margin-top:280px;
+	 /*border: dashed 2px #00FF7F;*/
+	 border-radius: 10px;
+	 /*box-shadow: 0 5px 0 0 #07f inset, 0 0 0 100% rgba(34,34,34,.65);*/
+	 text-align: center; 
+	 font-size: 15px; 
+	 line-height: 1.5;
+	 background: -moz-linear-gradient(#fff, #C90);
+	 background: -webkit-linear-gradient(#fff, #C90);
+	 background: -o-linear-gradient(#fff, #C90);
+	} 
+    
+/* Не трогать! Это для того, чтобы окно было по центру. */ 
+.modal .modal_elect {
+	left: 0px; 
+	top: 0px; 
+	right: 0px; 
+	bottom: 0; 
+	margin: auto;} 
+
+/* Стиль окна */ 
+.modal .modal_elect {
+     position: fixed; 
+	 display: block;
+     background: #fff; 
+	 padding: 20px;
+     width: 200px; 
+	 height: 100px;
+     margin-left: 120px;
+     margin-top: 400px;	 
+	 /*border: dashed 2px #00FF7F;*/
+	 border-radius: 10px;
+	 /*box-shadow: 0 5px 0 0 #07f inset, 0 0 0 1000px rgba(34,34,34,.65); */
+	 text-align: center; 
+	 font-size: 15px; 
+     line-height: 1.5;
+	 background: -moz-linear-gradient(#fff, #C90);
+	 background: -webkit-linear-gradient(#fff, #C90);
+	 background: -o-linear-gradient(#fff, #C90);
+	 } 
+	 
+/* Не трогать! Это для того, чтобы окно было по центру. (Трансмиссии)*/ 
+
+.modal .modal_transmiss {
+	left: 0px; 
+	top: 0px; 
+	right: 0px; 
+	bottom: 0; 
+	margin: auto;} 
+
+/* Стиль окна (Трансмиссии)*/ 
+.modal .modal_transmiss {
+     position: fixed; 
+	 display: block;
+     background: #fff; 
+	 padding: 20px;
+     width: 200px; 
+	 height: 100px; 
+	 right: 300px;
+	 margin-top: 380px;
+	 /*border: dashed 2px #00FF7F;*/
+	 border-radius: 10px;
+	 /*box-shadow: 0 5px 0 0 #07f inset, 0 0 0 1000px rgba(34,34,34,.65); */
+	 text-align: center; 
+	 font-size: 15px; 
+     line-height: 1.5;
+	 background: -moz-linear-gradient(#fff, #C90);
+	 background: -webkit-linear-gradient(#fff, #C90);
+	 background: -o-linear-gradient(#fff, #C90);
+	 } 
+	 
+/* Эффект исчезновения для окна */ 
+/*#modal:not(:target) {opacity: 0; visibility: hidden; transition: opacity .4s, visibility .4s;} 
+
+/* Эффект появления для окна */ 
+/*#modal:target {opacity: 1; visibility: visible; transition: opacity .4s, visibility .4s;}*/
+
+#modalENGINE:not(:target) {opacity: 0; visibility: hidden; transition: opacity .4s, visibility .4s;} 
+#modalENGINE:target {opacity: 1; visibility: visible; transition: opacity .4s, visibility .4s;}
+
+#modalELECT:not(:target) {opacity: 0; visibility: hidden; transition: opacity .4s, visibility .4s;} 
+#modalELECT:target {opacity: 1; visibility: visible; transition: opacity .4s, visibility .4s;}
+
+#modalTRANSMISS:not(:target) {opacity: 0; visibility: hidden; transition: opacity .4s, visibility .4s;} 
+#modalTRANSMISS:target {opacity: 1; visibility: visible; transition: opacity .4s, visibility .4s;}
+
+
+
+

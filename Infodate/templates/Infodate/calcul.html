@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ru">
+<head>
+ <meta charset="UTF-8">
+ <title>Техническая поддержка Renault Logan</title>
+ {% load staticfiles %}
+ <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+ <link rel="stylesheet" href="{% static 'CSS/menu.css' %}">
+ <meta charset="UTF-8">
+</head>
+
+ <body style="background-color: #FFFFFF; overflow-x: hidden">
+  <div id="conteiner">
+  <div id="header">
+    <div id="namecontenier">	
+		<div id="name">
+			Техническое сопровождение по эксплуатации автомобиля<br>&#34;Renault Logan&#34;
+		</div>
+		<div id="logo"></div>
+		<div id="videologan">
+			<video width="250px" autoplay loop>
+				<source src='{% static "VIDEO/logan.mp4" %}' type="video/mp4">
+			</video>
+		</div>
+	  </div>
+  </div>
+  <div id="menu">
+    <ul id="nav">
+		 <li class="left"><a href="{% url 'Infodate:index'%}" target="_blank">Домой</a></li>
+		 <li class="right"><a href="{% url 'Infodate:engine' %}" target="_blank">Узлы</a></li>
+		 <li class="left"><a href="#">Service</a></li>
+		 <li class="right"><a href="#">Карта СТО</a></li>
+		 <li class="left"><a href="#">Литература</a></li>
+		 <li class="right"><a href="{% url 'Infodate:calcul' %}" target="_blank">Расчет</a>
+		 </li>
+    </ul>
+  </div>
+  <div id="osnova">
+    <div>
+		{% for i in calculat %}	
+			<table style="text-align:center; border: 1px dashed #1240AA">
+				<tr>
+					<th>Имя<br>пользователя</th><th>текущий<br>пробег</th><th>дата<br>приобретения</th>
+					<th>общий<br>пробег</th><th>дата<br>публикации</th><th>наличие<br>кондиционера</th>
+				</tr>
+				<tr></tr>
+				<tr>
+					<td>{{i.author}}</td><td>{{i.probeg_tek}}</td><td>{{i.date_create}}</td>
+					<td>{{i.probeg_all}}</td><td>{{i.date_publish}}</td><td>{{i.conder}}</td>
+				</tr>
+				<tr></tr>
+			</table>
+		{% endfor %}
+	</div>
+	<div>
+		<!--a href="{% url 'Infodate:input_new' %}"><span class="glyphicon glyphicon-plus"></span></a-->
+		<h1><a href="{% url 'Infodate:input_new' %}">Расчитать данные</a></h1>
+	</div>
+  </div>
+  <div class="footer">
+  	
+  </div>
+ </div>
+</body>
+</html>
