@@ -7,5 +7,5 @@ urlpatterns = (
 	url(r'^$', index, name='index'),
 	url(r'^Calculat', calcul, name='calcul'),
 	url(r'^Engine', engine, name='engine'),
-    url(r'^Input', input_new, name='input_new'),
+	url(r'^Input', input_new, name='input_new'),
 )
