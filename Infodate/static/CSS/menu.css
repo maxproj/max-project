@@ -51,9 +51,9 @@ li a:hover {
  color: #FF7A00;
 }
 li a:hover {
- -webkit-transform: rotate(-360deg) scale(1.2);
- -moz-transform: rotate(-360deg) scale(1.2);
- -o-transform: rotate(-360deg) scale(1.2);
+ -webkit-transform: rotate(-10deg) scale(1.2);
+ -moz-transform: rotate(-10deg) scale(1.2);
+ -o-transform: rotate(-10deg) scale(1.2);
 }
 
 /*.left a:hover {
@@ -75,9 +75,9 @@ li a:hover {
  -o-transition:All .5s ease;
  
  /*Transform*/ 
- -webkit-transform: rotate(-360deg) scale(1.2);
- -moz-transform: rotate(-360deg) scale(1.2);
- -o-transform: rotate(-360deg) scale(1.2);
+ -webkit-transform: rotate(-10deg) scale(1.2);
+ -moz-transform: rotate(-10deg) scale(1.2);
+ -o-transform: rotate(-10deg) scale(1.2);
 }
  
 .right a:hover {
@@ -88,8 +88,8 @@ li a:hover {
  -o-transition:All .5s ease;
  
  /*Transform*/ 
- -webkit-transform: rotate(360deg) scale(1.2);
- -moz-transform: rotate(360deg) scale(1.2);
- -o-transform: rotate(360deg) scale(1.2);
+ -webkit-transform: rotate(10deg) scale(1.2);
+ -moz-transform: rotate(10deg) scale(1.2);
+ -o-transform: rotate(10deg) scale(1.2);
 }
 

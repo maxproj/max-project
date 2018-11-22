@@ -1,5 +1,6 @@
 ﻿@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=El+Messiri:700|Playfair+Display+SC:900');
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Kurale|Open+Sans+Condensed:300|Oswald|Poiret+One|Roboto+Condensed|Yanone+Kaffeesatz');
 /* CSS Document */
 #fon{
 	display: block;
@@ -45,7 +46,7 @@
 	position: absolute;
 	display: inline-block;
 	/*border: dashed 2px #EB1014;
-	margin: 10px auto;
+	/*margin: 10px auto;
 	/*left: 10px;*/
 	top: 850px;
 	width: 1250px;
@@ -168,7 +169,36 @@
 	margin-left: 210px;
 	margin-top: 350px;
 	float: none;
-}	
+}
+.tablecalc {
+    font-family: "Didact Gothic", "Poiret One", "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;
+    max-width: 80%;
+    width: 80%;
+    text-align: center;
+    border-collapse: collapse;
+    border-top: 2px solid #9baff1;
+    border-bottom: 2px solid #9baff1;
+}
+.tablecalc th {
+    font-size: 13px;
+    font-family: "Kurale", "Oswald";
+    font-weight: normal;
+    background: #b9c9fe;
+    border-top: 4px solid #aabcfe;
+    border-bottom: 1px solid #fff;
+    color: #039;
+    padding: 5px;
+}
+.tablecalc td {
+    background: #e8edff;
+    border-bottom: 1px solid #fff;
+    color: #669;
+    border-top: 1px solid transparent;
+    padding: 5px;
+}
+.tablecalc tr:hover td {background: #ccddff;}
+
 .logan_body {
 	position: absolute;
 	border: dashed 2px #FFFFFF;
