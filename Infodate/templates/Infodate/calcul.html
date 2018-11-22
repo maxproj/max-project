@@ -1,18 +1,26 @@
 <!doctype html>
 <html lang="ru">
 <head>
+ {% load staticfiles %}
  <meta charset="UTF-8">
  <title>Техническая поддержка Renault Logan</title>
- {% load staticfiles %}
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+ {% load bootstrap3 %}
  <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
  <link rel="stylesheet" href="{% static 'CSS/menu.css' %}">
  <meta charset="UTF-8">
+
 </head>
 
  <body style="background-color: #FFFFFF; overflow-x: hidden">
   <div id="conteiner">
   <div id="header">
-    <div id="namecontenier">	
+    <div id="namecontenier">
 		<div id="name">
 			Техническое сопровождение по эксплуатации автомобиля<br>&#34;Renault Logan&#34;
 		</div>
@@ -28,37 +36,74 @@
     <ul id="nav">
 		 <li class="left"><a href="{% url 'Infodate:index'%}" target="_blank">Домой</a></li>
 		 <li class="right"><a href="{% url 'Infodate:engine' %}" target="_blank">Узлы</a></li>
-		 <li class="left"><a href="#">Service</a></li>
 		 <li class="right"><a href="#">Карта СТО</a></li>
 		 <li class="left"><a href="#">Литература</a></li>
-		 <li class="right"><a href="{% url 'Infodate:calcul' %}" target="_blank">Расчет</a>
-		 </li>
+		 <!--li class="right"><a href="{% url 'Infodate:calcul' %}" target="_blank">Расчет</a>
+		 </li-->
     </ul>
   </div>
   <div id="osnova">
     <div>
-		{% for i in calculat %}	
-			<table style="text-align:center; border: 1px dashed #1240AA">
-				<tr>
-					<th>Имя<br>пользователя</th><th>текущий<br>пробег</th><th>дата<br>приобретения</th>
-					<th>общий<br>пробег</th><th>дата<br>публикации</th><th>наличие<br>кондиционера</th>
-				</tr>
-				<tr></tr>
-				<tr>
-					<td>{{i.author}}</td><td>{{i.probeg_tek}}</td><td>{{i.date_create}}</td>
-					<td>{{i.probeg_all}}</td><td>{{i.date_publish}}</td><td>{{i.conder}}</td>
-				</tr>
-				<tr></tr>
-			</table>
-		{% endfor %}
+		<table>
+			<tr>
+				<td height=20></td>
+			</tr>
+		</table>
 	</div>
+
 	<div>
-		<!--a href="{% url 'Infodate:input_new' %}"><span class="glyphicon glyphicon-plus"></span></a-->
-		<h1><a href="{% url 'Infodate:input_new' %}">Расчитать данные</a></h1>
+		<table>
+			<tr>
+				<td height=30></td>
+			</tr>
+		</table>
 	</div>
+	<div style="margin-left: 50px">
+		<table class="tablecalc">
+				<tr>
+					<th>дата<br>публикации</th>
+					<th>дата<br>приобретения</th>
+					<th>тип<br>двигателя</th>
+					<th>тип<br>КПП</th>
+					<th>текущий<br>пробег</th>
+					<th>общий<br>пробег</th>
+					<th>тип<br>эксплуатации</th>
+					<th>дата<br>замены<br>масла(посл.)</th>
+					<th>дата<br>замены<br>ТЖ(посл.)</th>
+					<th>дата<br>замены<br>ОЖ(посл.)</th>
+					<th>наличие<br>ТО</th>
+					<th>дата<br>ТО(посл.)</th>
+					<th>наличие<br>кондиционера</th>
+					<th>Имя<br>пользователя</th>
+				</tr>
+				<tr></tr>
+			{% for i in calculat %}
+				<tr>
+					<td>{{i.date_publish|date:"d-m-Y"}}</td>
+					<td>{{i.date_create|date:"d-m-Y"}}</td>
+					<td>{{i.type_engine}}</td>
+					<td>{{i.type_kpp}}</td>
+					<td>{{i.probeg_tek}}</td>
+					<td>{{i.probeg_all}}</td>
+					<td>{{i.type_expl}}</td>
+					<td>{{i.date_oil_last|date:"d-m-Y"}}</td>
+					<td>{{i.date_liq_last|date:"d-m-Y"}}</td>
+					<td>{{i.date_brake_last|date:"d-m-Y"}}</td>
+					<td>{{i.to_make}}</td>
+					<td>{{i.date_to_last|date:"d-m-Y"}}</td>
+					<td>{{i.conder}}</td>
+					<td>{{i.author}}</td>
+				</tr>
+			{% endfor %}
+		</table>
+
+	</div>
+	<!--div>
+		<h1><a href="{% url 'Infodate:input_new' %}">Расчитать данные</a></h1>
+	</div-->
   </div>
-  <div class="footer">
-  	
+  <div id="footer">
+
   </div>
  </div>
 </body>
